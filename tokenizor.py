@@ -20,9 +20,9 @@ wordnet_lemmatizer = WordNetLemmatizer()
 stopwords = set(w.strip() for w in open('stopwords.txt'))
 
 # Load reviews
-positive_reviews = BeautifulSoup(open('dataset/positive.review').read())
+positive_reviews = BeautifulSoup(open('dataset/positive.review').read(), 'lxml')
 positive_reviews = positive_reviews.findAll('review_text')
-negative_reviews = BeautifulSoup(open('dataset/negative.review').read())
+negative_reviews = BeautifulSoup(open('dataset/negative.review').read(), 'lxml')
 negative_reviews = negative_reviews.findAll('review_text')
 
 # Shuffle positive reviews and trim all to the same size
