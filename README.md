@@ -3,8 +3,6 @@
 Some background: A sentiment is a measure of how positive or negative something is. It can be applied to things such as
 Amazon reviews, Yelp reviews, hotel reviews, tweets, etc.
 
-> From course: Natural Language Processing in Python - UDEMY.ORG
-
 ## About the program
 The python program analyses electronics reviews (messages, emails, etc.) and classifies them as positive or negative,
 using Logistic Regression.
